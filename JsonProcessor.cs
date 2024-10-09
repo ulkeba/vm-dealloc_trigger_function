@@ -13,7 +13,7 @@ namespace EventProcessorFunction
         [FunctionName("EventProcessor")]
         public void RunEventGridTrigger([EventGridTrigger] EventGridEvent eventGridEvent, ILogger log)
         {
-            log.LogInformation($"C# Event grid trigger function Processed event :{eventGridEvent.Data.ToString()}");
+            // log.LogInformation($"C# Event grid trigger function Processed event :{eventGridEvent.Data.ToString()}");
             
             var jsonParsed = JsonNode.Parse(eventGridEvent.Data);
 
