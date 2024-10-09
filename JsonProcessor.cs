@@ -24,6 +24,7 @@ namespace EventProcessorFunction
             {
                 log.LogInformation($"Virtual Machine deallocated: {resourceUri}. Do something here...");
             }
+            log.LogInformation($"Event processed successfully.");
         }
 
     }
